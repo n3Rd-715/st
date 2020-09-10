@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Inconsolata:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -16,7 +16,7 @@ static int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static char *shell = "/bin/zsh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = NULL;
@@ -93,39 +93,31 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-/* bg opacity */
-float alpha = 0.8;
 
 /* bg opacity */
-float alpha = 0.8;
-
-/* bg opacity */
-float alpha = 0.8;
-
-/* bg opacity */
-float alpha = 0.8;
+float alpha = 0.7;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
 	"black",
-	"red3",
-	"green3",
-	"yellow3",
+	"#FF6961",
+	"#F50068",
+	"cyan",
 	"blue2",
-	"magenta3",
 	"cyan3",
-	"gray90",
+	"#FA4F3F",
+	"#00FFB1",
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
+	"#FDFD96",
+	"#FF6961",
+	"#F50068",
 	"cyan",
-	"white",
+	"blue2",
+	"cyan3",
+	"#FA4F3F",
+	"#00FFB1",
 
 	[255] = 0,
 
